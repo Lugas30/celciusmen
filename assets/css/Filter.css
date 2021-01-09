@@ -1,0 +1,63 @@
+.filter select {
+  width: 280px;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  background: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .filter select {
+    width: 200px;
+  }
+}
+
+.filter {
+  text-align: center;
+  background-color: #f4f4f4;
+  height: 180px;
+}
+
+@media screen and (max-width: 992px) {
+  .filter {
+    height: 230px;
+  }
+}
+
+.filter input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  background: #ffffff;
+  display: inline-block;
+  float: left;
+}
+
+* {
+  outline: none;
+}
+
+.btn-search {
+  width: 10%;
+  padding: 10px;
+  background: #ffffff;
+  color: rgb(30,30,30);
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.inputan {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+

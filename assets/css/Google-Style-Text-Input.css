@@ -1,0 +1,89 @@
+.group {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+input {
+  font-size: 14px;
+  padding: 8px 8px 8px 5px;
+  display: block;
+  width: 350px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #3b3b3b;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .bar {
+    width: 100%;
+  }
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #3b3b3b;
+  transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
