@@ -102,7 +102,7 @@ h4, h5, h6, p, a, span {
   border: none;
   color: rgb(255,255,255);
   background-color: black;
-  transition: ease-out 0.3s;
+  transition: ease-out 1.3s;
   letter-spacing: 3px;
   font-size: 14px;
   font-weight: 500;
@@ -484,5 +484,10 @@ fieldset {
   .hidden-sm-up {
     display: none !important;
   }
+}
+
+.shipping {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 

@@ -183,65 +183,25 @@
           <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
             <div class="card-body px-3 py-4">
 
-              <div class="row py-0">
-                <div class="col">
-                  <div class="shipping-input-group form-inline">      
-                  <input type="text" required>
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label>First name</label>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="shipping-input-group form-inline">      
-                  <input type="text" required>
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label>Last name</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="shipping-input-group">      
-                <input type="text" required>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Address</label>
-              </div>
-
-              <div class="shipping-input-group">      
-                <input type="text" required>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Province</label>
-              </div>
-
-              <div class="shipping-input-group">      
-                <input type="text" required>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>City</label>
-              </div>
-
-              <div class="row py-0">
-              <div class="col">
-              <div class="shipping-input-group form-inline">      
-                <input type="text" required>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Phone number</label>
-              </div>
-              </div>
-
-              <div class="col">
-              <div class="shipping-input-group form-inline">    
-                <input type="text" required>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>ZIP code</label>
-              </div>
-              </div>
+              <div class="shipping">
+                <input class="border rounded shadow-sm d-inline-block float-left" type="text" style="width: 49%;height: 40px;padding: 10px;padding-top: 10px;margin-bottom: 20px;" placeholder="First name" name="Fname" />
+                <input class="border rounded shadow-sm d-inline-block float-right"
+                    type="text" style="width: 49%;height: 40px;padding: 10px;padding-top: 10px;margin-bottom: 20px;" placeholder="Last name" name="Lname" />
+                <textarea class="border rounded shadow-sm d-inline-block float-left" style="margin-bottom: 20px;width: 100%;font-size: 14px;padding: 10px;"
+                    name="Address" placeholder="Complete Address"></textarea>
+                <select class="shadow-sm custom-select d-inline-block float-left" name="Province" style="width: 49%;font-size: 14px;margin-bottom: 20px;">
+                    <option value="12" selected>Provice</option>
+                    <option value="13">Jawa Barat</option>
+                    <option value="14">DKI Jakarta</option>
+                </select>
+                <select class="shadow-sm custom-select d-inline-block float-right" name="City" style="width: 49%;font-size: 14px;margin-bottom: 20px;">
+                    <option value="12" selected>City</option>
+                    <option value="13">Bogor</option>
+                    <option value="14">Depok</option>
+                </select>
+                <input class="border rounded shadow-sm d-inline-block float-left" type="text" style="width: 49%;height: 40px;padding: 10px;padding-top: 10px;margin-bottom: 20px;" placeholder="Phone" name="Fname" />
+                <input class="border rounded shadow-sm d-inline-block float-right"
+                        type="text" style="width: 49%;height: 40px;padding: 10px;padding-top: 10px;margin-bottom: 20px;" placeholder="ZIP code" name="Lname" />
               </div>
               
               <button class="btn btn-lg text-center text-white btn-2" type="button" style="width: 100%;">CHECKOUT</button>
