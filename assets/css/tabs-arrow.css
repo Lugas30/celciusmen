@@ -1,10 +1,10 @@
-.nav a {
-  color: black;
+.with-arrow .nav-link {
+  color: #000000;
 }
 
 .with-arrow .nav-link.active {
   position: relative;
-  background-color: black;
+  background-color: #000000;
 }
 
 .with-arrow .nav-link.active::after {

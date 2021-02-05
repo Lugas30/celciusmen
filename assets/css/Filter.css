@@ -4,6 +4,7 @@
   border: none;
   margin: 5px;
   background: #ffffff;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -46,7 +47,7 @@
   padding: 10px;
   background: #ffffff;
   color: rgb(30,30,30);
-  font-size: 14px;
+  font-size: 12px;
   border: none;
   cursor: pointer;
   float: left;
@@ -59,5 +60,6 @@
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  font-size: 12px;
 }
 

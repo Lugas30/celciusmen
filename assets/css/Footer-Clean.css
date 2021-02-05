@@ -1,5 +1,5 @@
 .footer-clean {
-  padding: 25px 0px;
+  padding: 30px 30px 50px;
   background-color: #fff;
   color: #4b4c4d;
 }
@@ -7,26 +7,16 @@
 .footer-clean h3 {
   margin-top: 0;
   margin-bottom: 12px;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.footer-clean ul {
-  padding: 0;
-  list-style: none;
-  line-height: 1.6;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.footer-clean ul a {
-  color: inherit;
+.footer-clean a {
   text-decoration: none;
-  opacity: 0.8;
+  color: #4b4c4d;
 }
 
-.footer-clean ul a:hover {
-  opacity: 1;
+.footer-clean a:hover {
+  color: #bebebe;
 }
 
 .footer-clean .item.social {
@@ -82,11 +72,5 @@
   margin-bottom: 0;
   font-size: 13px;
   opacity: 0.6;
-}
-
-.text-center {
-}
-
-.text-center {
 }
 
