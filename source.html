@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/footer-Clean.css">
     <link rel="stylesheet" href="assets/css/g-style-text-input.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/steps-progressbar.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/tabs-arrow.css">
@@ -35,7 +37,7 @@
                 class="btn btn-type4" role="button" href="index-mens.html">SHOP THE COLLECTION</a>
         </div>
         <div class="p-2" style="background-color: #ebebeb;"><a class="btn btn-type5" role="button" href="index-mens.html">SHOW MORE</a><a class="btn btn-type2" role="button" href="index-mens.html">SHOP THE COLLECTION</a></div>
-        <div class="p-2" style="background-color: #ebebeb;"><a class="btn btn-type1-small" role="button" href="index-mens.html">SHOP THE COLLECTION</a></div>
+        <div class="p-2" style="background-color: #ebebeb;"><a class="btn btn-type1-small" role="button" href="index-mens.html">SHOP THE COLLECTION</a><a class="btn btn-share" role="button" href="index-mens.html">SHARE&nbsp;<i class="fas fa-share-alt"></i></a></div>
         <div class="py-3">
             <div class="py-3">
                 <div class="group-form-select"><span class="label-form"><strong>PROVINCE</strong></span><select class="form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
@@ -49,7 +51,7 @@
 
 
 </div>
-        <div class="radio-button-warp p-4">
+        <div class="radio-button-warp-size-chart p-4">
             <p>Silahkan pilih yang mau anda pilih :</p><label class="container-radio"><input type="radio" class="input" name="radio" checked=""><span class="checkmark"></span>Jakarta</label><label class="container-radio">Depok<input type="radio" class="input" name="radio"><span class="checkmark"></span></label>
             <label
                 class="container-radio">Tangerang<input type="radio" class="input" name="radio"><span class="checkmark"></span></label>
@@ -145,6 +147,66 @@
                 </div>
             </form>
         </div>
+        <div>
+            <div class="warp-size-chart">
+	            <div class="text-center">
+					<label class="radio"> 
+						<input type="radio" name="size" value="S"> 
+						<span>S</span> 
+					</label> 
+					<label class="radio"> 
+						<input type="radio" name="size" value="M"> 
+						<span>M</span> 
+					</label>
+					<label class="radio"> 
+						<input type="radio" name="size" value="L"> 
+						<span>L</span> 
+					</label> 
+					<label class="radio"> 
+						<input type="radio" name="size" value="XL"> 
+						<span>XL</span> 
+					</label>
+					<label class="radio"> 
+						<input type="radio" name="size" value="30"> 
+						<span>30</span> 
+					</label> 
+					<label class="radio"> 
+						<input type="radio" name="size" value="40"> 
+						<span>40</span> 
+					</label>
+	            </div>
+	       </div>
+        </div>
+        <div><a class="btn btn-share" role="button" href="index-mens.html" data-toggle="modal" data-target="#exampleModal">SHARE&nbsp;<i class="fas fa-share-alt"></i></a><!-- Masukan data-modal & data-target ke button -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content col-12">
+            <div class="modal-header">
+                <p class="modal-title">Share</p> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+                <div class="icon-container1 d-flex">
+                    <div class="smd"> <i class=" img-thumbnail fab fa-twitter fa-2x"></i>
+                        <p>Twitter</p>
+                    </div>
+                    <div class="smd"> <i class="img-thumbnail fab fa-facebook fa-2x"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="smd"> <i class="img-thumbnail fab fa-instagram fa-2x"></i>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="smd"> <i class="img-thumbnail fab fa-whatsapp fa-2x"></i>
+                        <p>Whatsapp</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer"> <p style="font-weight: 600">Page Link <span class="message"></span></p><br />
+                <div class="row"> <input class="col-10 ur" type="url" placeholder="https://www.celciusmen.com/detail/yellow-tshirt" id="myInput" aria-describedby="inputGroup-sizing-default" style="height: 40px;"> <button class="cpy" onclick="myFunction()"><i class="far fa-clone"></i></button> </div>
+            </div>
+        </div>
+    </div>
+</div></div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -153,7 +215,11 @@
     <script src="assets/js/accordion.js"></script>
     <script src="assets/js/back-to-top.js"></script>
     <script src="assets/js/fixed-navbar.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/product-detail.js"></script>
     <script src="assets/js/search-navbar.js"></script>
+    <script src="assets/js/share-link-note.js"></script>
 </body>
 
 </html>

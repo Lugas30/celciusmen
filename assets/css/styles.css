@@ -187,6 +187,8 @@ p, a, span, label, ul, li {
   border: 2px solid rgb(0,0,0);
 }
 
+/* -- Small Button -- */
+
 .btn-type1-small {
   display: inline-block;
   width: auto;
@@ -205,6 +207,30 @@ p, a, span, label, ul, li {
 .btn-type1-small:hover {
   background-color: #ffffff;
   color: rgb(0,0,0);
+}
+
+/* -- Share Button -- */
+
+.btn-share {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-share:hover {
+  background-color: #000000;
+  color: rgb(255,255,255);
 }
 
 /* -- Search Navbar -- */
@@ -646,5 +672,206 @@ p, a, span, label, ul, li {
 .title-header-shipping {
   font-size: 20px;
   font-weight: 500;
+}
+
+/* -- Detail Product -- */
+
+.backtobtn a {
+  color: rgb(0,0,0);
+  text-decoration: none;
+}
+
+.backtobtn a:hover {
+  color: rgb(194,194,194);
+  text-decoration: none;
+}
+
+/* -- Details Product -- */
+
+.card {
+  border-style: none;
+}
+
+fieldset.active {
+  display: block !important;
+}
+
+fieldset {
+  display: none;
+}
+
+.pic0 {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0px 0px 0px 70px;
+  padding-right: 25px;
+}
+
+.product-pic {
+  width: 100%;
+}
+
+.thumbnails {
+  position: absolute;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.tb {
+  width: 100%;
+  border: none;
+  margin: 0px 0px 5px 0px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.tb-active {
+  opacity: 1;
+}
+
+.thumbnail-img {
+  width: 60px;
+  height: 60px;
+}
+
+.title-header-product-detail {
+  font-size: 45px;
+}
+
+/* -- Details Product Description -- */
+
+.price-detail {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.warp-price-colour {
+  padding-bottom: 30px;
+}
+
+.sub-title {
+  font-weight: bold;
+}
+
+.description-field {
+  padding-bottom: 30px;
+}
+
+/* -- Choose Size Chart -- */
+
+label.radio {
+  cursor: pointer;
+}
+
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio span {
+  padding: 3px 0px;
+  width: 50px;
+  border: 2px solid #000000;
+  display: inline-block;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+label.radio input:checked + span {
+  border-color: #000000;
+  background-color: #898989;
+  color: #fff;
+}
+
+.warp-size-chart {
+  display: inline-block;
+  padding-bottom: 50px;
+}
+
+/* -- Share Link -- */
+
+.warp-btn-share {
+  padding-bottom: 30px;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: rgb(0,0,0);
+}
+
+.modal-content {
+  border-radius: 13px;
+}
+
+.modal-body {
+  color: #3b3b3b;
+}
+
+.img-thumbnail {
+  border-radius: 33px;
+  width: 61px;
+  height: 61px;
+  color: rgb(0,0,0);
+  background-color: rgb(255,255,255);
+}
+
+.fab:before {
+  position: relative;
+  top: 13px;
+}
+
+.smd {
+  width: 200px;
+  font-size: small;
+  text-align: center;
+}
+
+.modal-footer {
+  display: block;
+}
+
+.ur {
+  border: none;
+  background-color: #e6e2e2;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.cpy {
+  border: none;
+  background-color: #e6e2e2;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+}
+
+.ur.focus, .ur:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.message {
+  font-size: 11px;
+  color: #ee5535;
+}
+
+/* -- Relate Product -- */
+
+.related-product {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.related-product h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
 }
 
