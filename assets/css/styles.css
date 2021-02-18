@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Bebas Kai';
 }
 
-p, a, span, label, ul, li {
+p, a, span, label, ul, li, button {
   font-family: yantramanav;
 }
 
@@ -674,6 +674,22 @@ p, a, span, label, ul, li {
   font-weight: 500;
 }
 
+/* -- New Shipping Method -- */
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.form-control {
+  border: 1px solid #d0d0d0;
+  font-size: 14px;
+  height: 52px;
+}
+
 /* -- Detail Product -- */
 
 .backtobtn a {
@@ -873,5 +889,51 @@ label.radio input:checked + span {
 .related-product h1 {
   font-size: 40px;
   padding-bottom: 20px;
+}
+
+/* -- Content Explore -- */
+
+.bg-content-dark {
+  background-color: rgb(20,20,20);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.bg-content-light {
+  background-color: rgb(252,252,252);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* -- Lookbook -- */
+
+.article-card {
+  width: 50%;
+}
+
+.article-card-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 0 2.25rem;
+}
+
+.back-image-article {
+  width: 100%;
+  height: 400px;
 }
 
