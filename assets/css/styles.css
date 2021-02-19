@@ -909,31 +909,43 @@ label.radio input:checked + span {
 
 /* -- Lookbook -- */
 
-.article-card {
-  width: 50%;
+.cover-image {
+  padding-bottom: 30px;
 }
 
-.article-card-title {
-  position: absolute;
-  top: 0;
-  left: 0;
+.cover-image img {
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 3rem;
+  height: auto;
+}
+
+.title-article {
+  font-size: 20px;
   text-align: center;
+  width: 85%;
+  text-decoration: none;
+  color: rgb(255,255,255);
   font-weight: 500;
-  padding: 0 2.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.back-image-article {
-  width: 100%;
-  height: 400px;
+.title-article:hover {
+  text-decoration: none;
+  color: rgb(186,186,186);
+}
+
+.text-block {
+  position: absolute;
+  width: 60%;
+  height: 200px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
