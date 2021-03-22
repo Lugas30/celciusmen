@@ -259,6 +259,73 @@ p, a, span, label, ul, li, button {
   color: rgb(255,255,255);
 }
 
+/* -- Navbar & Dropdown -- */
+
+.navbar .dropdown-menu div[class*="col"] {
+  margin-bottom: 10px;
+}
+
+.navbar .dropdown-menu {
+  border: none;
+  background-color: rgb(255,255,255) !important;
+  margin-top: 18px;
+}
+
+@media (max-width: 992px) {
+  .navbar .dropdown-menu {
+    border: none;
+    background-color: rgb(255,255,255) !important;
+    margin-top: 8px;
+    height: auto;
+  }
+}
+
+.navbar .nav-items {
+  margin: 3px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.navbar .dropdown {
+  position: static;
+}
+
+.navbar .dropdown-menu {
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 45px;
+}
+
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+  display: block !important;
+}
+
+.navbar .dropdown-menu {
+  background-color: #fff;
+}
+
+a.i {
+  margin-top: -25px;
+  font-weight: 400;
+  color: white;
+}
+
+a.catogary {
+  color: white;
+}
+
+a.nav-link.active {
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
+}
+
+.dropdown-img {
+  width: 100%;
+  height: auto;
+}
+
 /* -- Search Navbar -- */
 
 .openBtn {
@@ -351,11 +418,24 @@ p, a, span, label, ul, li, button {
 
 /* -- Home Page -- */
 
+.banner-warp {
+  width: 100%;
+  height: auto;
+}
+
 .main-banner {
   width: 100%;
   height: 700px;
   background-size: cover;
   object-fit: cover;
+}
+
+.main-banner-mobile {
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  object-fit: cover;
+  display: none;
 }
 
 .main-headline {
@@ -1053,45 +1133,170 @@ label.radio input:checked + span {
   padding-top: 20px;
 }
 
-/* -- Filter New -- */
+/* -- Filter & Sort grid -- */
 
-.filter-new {
-  background-color: #f9f9f9;
-  padding: 15px;
+.filter-warpping {
 }
 
-.btn-filter {
+.contain-frame {
+  margin-left: 10px;
+}
+
+.contain-frame {
+  margin-left: 10px;
+}
+
+.filter-grid {
   display: inline-block;
-  width: 100%;
+  float: right;
+}
+
+@media (max-width: 576px) {
+  .filter-grid {
+    display: block;
+  }
+}
+
+.filter-grid ul li {
+  display: flex;
+  float: left;
+  padding: 5px 0px 5px 50px;
   text-decoration: none;
   letter-spacing: 1px;
-  text-align: left;
   white-space: nowrap;
   background-color: #ffffff;
   color: #000000;
-  text-transform: uppercase;
-  font-weight: bold;
   transition: all 0.2s ease-in-out;
 }
 
-.btn-filter:hover {
-  background-color: rgb(0,0,0);
-  color: rgb(255,255,255);
-}
-
-.btn-filter i {
-  margin-top: 4px;
-}
-
-.filter-desktop {
-  display: inline-block!important;
-}
-
-.shop-filter {
-  position: relative;
-  display: inline-block;
-  padding: 10px 10px 10px;
-  cursor: pointer;
+.filterBtn {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
   font-size: 14px;
+}
+
+.filterBtn:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.filterBtn i {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+
+.sortBtn {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sortBtn:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.sortdrop {
+  position: static;
+}
+
+.sortdrop .dropdown-menu {
+  background: none;
+  border: none;
+  width: 50%;
+}
+
+.filter-padd {
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .filter-padd {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-padd {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.filter-padd-sort {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.type {
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.type h1 {
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.filter-list .form-check {
+  padding-bottom: 10px;
+}
+
+.btn-clear-filter {
+  padding: 5px;
+  font-weight: 500;
+}
+
+.filter-list-frame {
+  padding: 50px 100px 50px 100px;
+}
+
+@media (max-width: 768px) {
+  .filter-list-frame {
+    padding: 30px 30px 30px 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .filter-list-frame {
+    padding: 50px 50px 50px 50px;
+  }
+}
+
+.filter-list-frame-sort {
+  padding: 10px;
+  width: 50px;
+}
+
+.filter-header {
+  font-size: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.btn-pos {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .btn-pos {
+    text-align: center;
+  }
 }
 

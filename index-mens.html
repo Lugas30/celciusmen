@@ -35,26 +35,150 @@
             <div
                 class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item px-2" role="presentation"><a class="nav-link" href="index-mens.html" style="font-size: 14px;"><strong>MENS</strong></a></li>
-                    <li class="nav-item px-2" role="presentation"><a class="nav-link" href="rush.html" style="font-size: 14px;"><strong>RUSH</strong></a></li>
-                    <li class="nav-item px-2" role="presentation"><a class="nav-link" href="kids.html" style="font-size: 14px;"><strong>KIDS</strong></a></li>
-                    <li class="nav-item px-2" role="presentation"><a class="nav-link" href="explore.html" style="font-size: 14px;"><strong>EXPLORE</strong></a></li>
-                    <li class="nav-item px-2" role="presentation" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Location"><a class="nav-link" href="location.html"><i class="icon-location-pin"></i></a></li>
-                    <li class="nav-item px-2" role="presentation" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Account"><a class="nav-link" href="account.html"><i class="icon-user"></i></a></li>
-                    <li class="nav-item pl-2" role="presentation" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Shopping bag"><a class="nav-link d-md-flex align-items-md-center" href="shopping-bag.html"><i class="icon-bag"></i><span class="badge badge-pill badge-light" display="absolute">0</span></a></li>
-                    <li class="nav-item d-lg-flex align-items-lg-center px-2"
-                        role="presentation" title="Search">
-                        <div id="myOverlay" class="overlay"><span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa fa-close"></i></span>
-                            <div class="overlay-content">
-                                <h1 class="clean-block-15" style="font-size: 50px ; color: white;">You&nbsp;can&nbsp;search&nbsp;anything&nbsp;here<br></h1>
-                                <form class="form-inline" action="/action_page.php"><input class="form-control" type="text" placeholder="Search.." name="search"><button class="btn" type="submit"><i class="fa fa-search"></i></button></form>
+                    <li class="nav-item px-2 dropdown" role="presentation"><a class="nav-link catogary" id="navbarDropdown" href="index-mens.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>MENS</strong></a>
+                        <div
+                            class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="container-fluid px-5">
+                                <div class="row" style="width: 100%;">
+                                    <div class="col-md-2 col-lg-2">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-items"><a class="nav-link active" href="#">Apparel</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">New arrival</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Hoodies &amp; Sweatshirt</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Jackets &amp; Coats</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Blazer &amp; Suits</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">T-shirt &amp; Tanktops</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Shirt</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Polos</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Cardigan &amp; Sweater</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Trousers &amp; Chinos</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Joggers &amp; Sweatpants</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Jeans</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Shorts</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Underwear</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-items"><a class="nav-link active" href="#">Accessories</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Headwear</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Eyewear</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Bags</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Stuff</a></li>
+                                            <li class="nav-items"><a class="nav-link active" href="#">Footwear</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Socks</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Sandals</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Shoes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-items"><a class="nav-link active" href="#">Campaign</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Speed Rabel</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">New Legacy</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Ramadhan Kareem</a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#">Christmas Eve</a></li>
+                                            <li class="nav-items"><a class="nav-link active" href="#">View all</a></li>
+                                            <li class="nav-items"><a class="nav-link active" href="#">Special price</a></li>
+                                            <li class="nav-items"><a class="nav-link active" href="index-mens.html">Mens page</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 col-lg-3">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-items"><a class="nav-link active" href="#"><img class="dropdown-img" src="assets/img/prod5.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 col-lg-3">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-items"><a class="nav-link active" href="#"><img class="dropdown-img" src="assets/img/prod5.jpg"></a></li>
+                                            <li class="nav-items"><a class="nav-link i" href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div><button class="btn btn-primary openBtn py-2" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Search" onclick="openSearch()" style="padding: 0px;"><i class="icon-magnifier" style="color: rgb(145,145,145);"></i></button></li>
-                </ul>
+        </div>
+        </li>
+        <li class="nav-item px-2 dropdown" role="presentation"><a class="nav-link catogary" id="navbarDropdown" href="index-mens.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>RUSH</strong></a>
+            <div class="dropdown-menu"
+                aria-labelledby="navbarDropdown">
+                <div class="container-fluid px-5">
+                    <div class="row" style="width: 100%;">
+                        <div class="col-md-2 col-lg-2">
+                            <ul class="nav flex-column">
+                                <li class="nav-items"><a class="nav-link active" href="#">Apparel</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">New arrival</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Hoodies &amp; Sweatshirt</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Jackets &amp; Coats</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Blazer &amp; Suits</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">T-shirt &amp; Tanktops</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Shirt</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Polos</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Cardigan &amp; Sweater</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Trousers &amp; Chinos</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Joggers &amp; Sweatpants</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Jeans</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Shorts</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Underwear</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <ul class="nav flex-column">
+                                <li class="nav-items"><a class="nav-link active" href="#">Accessories</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Headwear</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Eyewear</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Bags</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Stuff</a></li>
+                                <li class="nav-items"><a class="nav-link active" href="#">Footwear</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Socks</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Sandals</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Shoes</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <ul class="nav flex-column">
+                                <li class="nav-items"><a class="nav-link active" href="#">Collection</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Atletic</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Running</a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#">Commuter</a></li>
+                                <li class="nav-items"><a class="nav-link active" href="#">View all</a></li>
+                                <li class="nav-items"><a class="nav-link active" href="#">Special price</a></li>
+                                <li class="nav-items"><a class="nav-link active" href="index-mens.html">Rush page</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-items"><a class="nav-link active" href="#"><img class="dropdown-img" src="assets/img/rush2.jpg"></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-items"><a class="nav-link active" href="#"><img class="dropdown-img" src="assets/img/rush1.jpg"></a></li>
+                                <li class="nav-items"><a class="nav-link i" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item px-2" role="presentation"><a class="nav-link" href="kids.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;"><strong>KIDS</strong></a></li>
+        <li class="nav-item px-2" role="presentation"><a class="nav-link" href="explore.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;"><strong>EXPLORE</strong></a></li>
+        <li class="nav-item px-2" role="presentation" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom"
+            title="Location"><a class="nav-link" href="location.html" style="padding-top: 15px;"><i class="icon-location-pin"></i></a></li>
+        <li class="nav-item px-2" role="presentation" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Account"><a class="nav-link" href="account.html" style="padding-top: 15px;padding-bottom: 15px;"><i class="icon-user"></i></a></li>
+        <li class="nav-item pl-2" role="presentation" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Shopping bag"><a class="nav-link d-md-flex align-items-md-center" href="shopping-bag.html" style="padding-top: 15px;padding-bottom: 15px;"><i class="icon-bag"></i><span class="badge badge-pill badge-light" display="absolute">0</span></a></li>
+        <li class="nav-item d-lg-flex align-items-lg-center px-2"
+            role="presentation" title="Search">
+            <div id="myOverlay" class="overlay"><span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa fa-close"></i></span>
+                <div class="overlay-content">
+                    <h1 class="clean-block-15" style="font-size: 50px ; color: white;">You&nbsp;can&nbsp;search&nbsp;anything&nbsp;here<br></h1>
+                    <form class="form-inline" action="/action_page.php"><input class="form-control" type="text" placeholder="Search.." name="search"><button class="btn" type="submit"><i class="fa fa-search"></i></button></form>
+                </div>
+            </div><button class="btn btn-primary openBtn py-2" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Search" onclick="openSearch()" style="padding: 0px;"><i class="icon-magnifier" style="color: rgb(145,145,145);"></i></button></li>
+        </ul>
         </div>
         </div>
     </nav>
-    <div class="main-banner" style="background-image: url(&quot;assets/img/moto1.jpg&quot;);">
+    <div class="banner-warp"><img class="main-banner" src="assets/img/bann-men1.jpg"><img class="main-banner-mobile" src="assets/img/bann-mob1.jpg">
         <div class="main-headline">
             <h1>SPEED REBEL</h1>
             <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4 px-5" role="button" href="index-mens.html">VIEW</a></div>
@@ -146,8 +270,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="assets/js/accordion.js"></script>
     <script src="assets/js/back-to-top.js"></script>
+    <script src="assets/js/collapsible.js"></script>
     <script src="assets/js/countdown-timer.js"></script>
     <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/dropdown-nav.js"></script>
     <script src="assets/js/fixed-navbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
