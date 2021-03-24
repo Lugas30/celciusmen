@@ -33,10 +33,23 @@
     <h1 class="text-center title-header">New Arrival</h1>
     <div class="clean-block-30">
         <div class="container-fluid">
-            <div class="row pb-3">
+            <div class="row pb-1">
                 <div class="col">
                     <div class="filter-grid">
                         <ul>
+                            <li class="nav-item dropdown no-arrow mx-1"><a id="alertsDropdown" class="sortBtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by</a>
+                                <div class="dropdown-menu border-0 dropdown-menu-right" aria-labelledby="megamneu">
+                                    <div class="sortFrame">
+                                        <ul>
+                                            <li><a class="sortItems" href="#">Price low to high</a></li>
+                                            <li><a class="sortItems" href="#">Price high to low</a></li>
+                                            <li><a class="sortItems" href="#">Product name A-Z</a></li>
+                                            <li><a class="sortItems" href="#">Product name Z-A</a></li>
+                                            <li><a class="sortItems pb-2" href="#">Top sellers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="dropdown megamenu"><a id="megamneu" class="filterBtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter<i class="icon ion-plus-round"></i></a>
                                 <div class="dropdown-menu border-0 p-0 m-0" aria-labelledby="megamneu">
                                     <div class="contain-frame">
@@ -112,8 +125,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                </div>
+                    </div><span class="showing">Showing : 120 Products</span></div>
             </div>
             <div class="row catalog">
                 <div class="col-md-3 clean-block-25" data-aos="fade"><a href="detail.html"><img src="assets/img/prod1.jpg"></a>
@@ -176,6 +188,7 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/owl.carousel.js"></script>
         <script src="assets/js/product-detail.js"></script>
+        <script src="assets/js/qty-incriment.js"></script>
         <script src="assets/js/search-navbar.js"></script>
         <script src="assets/js/share-link-note.js"></script>
         <script src="assets/js/show-element.js"></script>

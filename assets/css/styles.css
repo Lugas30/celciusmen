@@ -808,8 +808,6 @@ a.nav-link.active {
   text-decoration: none;
 }
 
-/* -- Details Product -- */
-
 .card {
   border-style: none;
 }
@@ -883,6 +881,62 @@ fieldset {
   padding-bottom: 30px;
 }
 
+.btn-minus {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 3px 0px 0px 3px;
+  border: solid 0.5px;
+  border-color: rgb(195,195,195);
+  background-color: #ffffff;
+  text-transform: uppercase;
+  padding: 7px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-plus i {
+  color: rgb(0,0,0);
+}
+
+.btn-plus {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: solid 0.5px;
+  border-color: rgb(195,195,195);
+  border-radius: 0px 3px 3px 0px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  padding: 7px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-group {
+  width: 110px;
+  height: 40px;
+}
+
+.input-number {
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.warp-qty {
+  padding-bottom: 50px;
+}
+
 /* -- Choose Size Chart -- */
 
 label.radio {
@@ -915,7 +969,7 @@ label.radio input:checked + span {
 
 .warp-size-chart {
   display: inline-block;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 /* -- Share Link -- */
@@ -1138,6 +1192,11 @@ label.radio input:checked + span {
 .filter-warpping {
 }
 
+.showing {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .contain-frame {
   margin-left: 10px;
 }
@@ -1160,7 +1219,7 @@ label.radio input:checked + span {
 .filter-grid ul li {
   display: flex;
   float: left;
-  padding: 5px 0px 5px 50px;
+  padding: 5px 0px 5px 35px;
   text-decoration: none;
   letter-spacing: 1px;
   white-space: nowrap;
@@ -1172,13 +1231,13 @@ label.radio input:checked + span {
 .filterBtn {
   text-decoration: none;
   color: black;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .filterBtn:hover {
   text-decoration: none;
-  color: black;
+  color: rgb(225,225,225);
 }
 
 .filterBtn i {
@@ -1190,13 +1249,30 @@ label.radio input:checked + span {
 .sortBtn {
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
 }
 
 .sortBtn:hover {
   text-decoration: none;
+  color: rgb(225,225,225);
+}
+
+.sortFrame {
+  width: 200px !important;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.sortItems {
+  font-size: 14px;
   color: black;
+}
+
+.sortItems:hover {
+  font-size: 14px;
+  color: rgb(225,225,225);
+  text-decoration: none;
 }
 
 .megamenu {
