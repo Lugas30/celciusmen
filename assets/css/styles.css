@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Bebas Kai';
 }
 
-p, a, span, label, ul, li, button {
+p, a, span, label, ul, li, button, td, th {
   font-family: yantramanav;
 }
 
@@ -508,6 +508,97 @@ a.nav-link.active {
 .btn-bahasa a:hover {
   color: rgb(147,147,147);
   text-decoration: none;
+}
+
+/* -- Sidenav -- */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  color: black;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.inner-sidenav {
+  padding: 0px 20px 20px 20px;
+  display: block;
+  position: absolute;
+}
+
+.title-sidenav {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.inner-desc {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media screen and (max-height: 576px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+}
+
+.btn-checkout-side {
+  width: 100%;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .btn-checkout-side {
+    font-size: 12px;
+  }
+}
+
+.btn-checkout-side:hover {
+  background-color: #ffffff;
+  color: rgb(0,0,0);
+}
+
+.block-layout {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.imgx {
+  padding-right: 15px;
+  display: block;
+}
+
+.dtlx {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  width: 160px;
 }
 
 /* -- Header Title Page-- */
@@ -1053,18 +1144,59 @@ label.radio input:checked + span {
 
 /* -- Content Explore -- */
 
-.bg-content-dark {
-  background-color: rgb(20,20,20);
+.bg-content-lookbook {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  height: 500px;
+  background-size: cover;
+  object-fit: cover;
 }
 
-.bg-content-light {
-  background-color: rgb(252,252,252);
+.pos-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-content-event {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  height: 500px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.overlay-updo {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.btn-ctn-type2 {
+  display: inline-block;
+  width: 200px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: 2px solid #ffffff;
+  background-color: rgba(255,255,255,0);
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-ctn-type2:hover {
+  background-color: rgba(255,255,255,0.5);
+  color: rgb(255,255,255);
 }
 
 /* -- Lookbook -- */
@@ -1372,6 +1504,52 @@ label.radio input:checked + span {
 
 @media (max-width: 768px) {
   .btn-pos {
+    text-align: center;
+  }
+}
+
+.acount-filterBtn {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.acount-filterBtn:hover {
+  text-decoration: none;
+  color: rgb(225,225,225);
+}
+
+/* -- View Order -- */
+
+.orderID-box {
+  font-size: 30px;
+}
+
+.orderDate-box {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.mini-detail {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.no-event {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .no-event {
+    font-size: 30px;
+    font-weight: 400;
     text-align: center;
   }
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/typicons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
@@ -54,6 +55,26 @@
         
         
         <!-- Contain-card-tabs-->
+        <div class="row">
+          <div class="filter-grid dropdown-menu-right">
+            <ul>
+                <li class="nav-item dropdown no-arrow mx-1"><a id="filterDropdown" class="acount-filterBtn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter by</a>
+                    <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="megamneu">
+                        <div class="sortFrame">
+                            <ul>
+                                <li><a class="sortItems" href="#">Payment</a></li>
+                                <li><a class="sortItems" href="#">Packing</a></li>
+                                <li><a class="sortItems" href="#">Shipping</a></li>
+                                <li><a class="sortItems pb-2" href="#">Delivered</a></li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+
         <div class="card bg-light border-dark border rounded-0 shadow-sm" style="margin: 10px;">
           <div class="card-body">
               <div class="container">
@@ -63,21 +84,85 @@
                         <span><strong>Date :</strong> Jan, 20, 2021</span>
                         <span><strong>Items :</strong> 3</span>
                         <span><strong>Total transaction :</strong> IDR 340.000</span>
-                        <span><strong>Status :</strong> Shipping</span>
+                        <span><strong>Status :</strong>Menunggu pembayaran</span>
                       </div>
                       <div class="col-md-6">
                           <div class="tracking">
                               <div class="steps-progressbar">
                                   <ul style="font-size: 12px;">
-                                      <li class="previous">Paid</li>
-                                      <li class="previous">Packing</li>
-                                      <li class="active">Shipping</li>
+                                      <li class="active">Payment</li>
+                                      <li>Packing</li>
+                                      <li>Shipping</li>
                                       <li>Delivered</li>
                                   </ul>
                               </div>
                               <div class="text-center" style="padding-top: 5px;">
                                 <button class="btn btn-primary border rounded-0" type="button" style="background-color: rgb(0,0,0);width: 150px;margin: 10px;font-size: 14px;">View order</button>
-                                <button class="btn btn-primary border rounded-0" type="button" style="width: 150px;color: rgb(0,0,0);font-size: 14px;background-color: rgb(252,252,252);">Tracking</button></div>
+                                <button class="btn btn-primary border rounded-0" type="button" style="width: 150px;color: rgb(0,0,0);font-size: 14px;background-color: rgb(252,252,252);">Payment</button></div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+      <div class="card bg-light border-dark border rounded-0 shadow-sm" style="margin: 10px;">
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column">
+                      <span><strong>Order ID :</strong> #CEL1234</span>
+                      <span><strong>Date :</strong> Jan, 20, 2021</span>
+                      <span><strong>Items :</strong> 3</span>
+                      <span><strong>Total transaction :</strong> IDR 340.000</span>
+                      <span><strong>Status :</strong>Menunggu konfirmasi</span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tracking">
+                            <div class="steps-progressbar">
+                                <ul style="font-size: 12px;">
+                                    <li class="active">Payment</li>
+                                    <li>Packing</li>
+                                    <li>Shipping</li>
+                                    <li>Delivered</li>
+                                </ul>
+                            </div>
+                            <div class="text-center" style="padding-top: 5px;">
+                              <button class="btn btn-primary border rounded-0" type="button" style="background-color: rgb(0,0,0);width: 150px;margin: 10px;font-size: 14px;">View order</button>
+                              <button class="btn btn-primary border rounded-0" type="button" style="width: 150px;color: rgb(0,0,0);font-size: 14px;background-color: rgb(252,252,252);">Ask to seller</button></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+        <div class="card bg-light border-dark border rounded-0 shadow-sm" style="margin: 10px;">
+          <div class="card-body">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-6 d-flex flex-column">
+                        <span><strong>Order ID :</strong> #CEL1234</span>
+                        <span><strong>Date :</strong> Jan, 20, 2021</span>
+                        <span><strong>Items :</strong> 3</span>
+                        <span><strong>Total transaction :</strong> IDR 340.000</span>
+                        <span><strong>Status :</strong>Packing</span>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="tracking">
+                              <div class="steps-progressbar">
+                                  <ul style="font-size: 12px;">
+                                      <li class="previous">Payment</li>
+                                      <li class="active">Packing</li>
+                                      <li>Shipping</li>
+                                      <li>Delivered</li>
+                                  </ul>
+                              </div>
+                              <div class="text-center" style="padding-top: 5px;">
+                                <button class="btn btn-primary border rounded-0" type="button" style="background-color: rgb(0,0,0);width: 150px;margin: 10px;font-size: 14px;">View order</button>
+                                <button class="btn btn-primary border rounded-0" type="button" style="width: 150px;color: rgb(0,0,0);font-size: 14px;background-color: rgb(252,252,252);" disabled>Tracking</button></div>
                           </div>
                   </div>
               </div>
@@ -91,30 +176,95 @@
                 <div class="row">
                     <div class="col-md-6 d-flex flex-column">
                       <span><strong>Order ID :</strong> #CEL1234</span>
-                      <span><strong>Date :</strong> Dec, 30, 2020</span>
-                      <span><strong>Items :</strong> 2</span>
-                      <span><strong>Total transaction :</strong> IDR 240.000</span>
-                      <span><strong>Status :</strong> Refund</span>
+                        <span><strong>Date :</strong> Jan, 20, 2021</span>
+                        <span><strong>Items :</strong> 3</span>
+                        <span><strong>Total transaction :</strong> IDR 340.000</span>
+                        <span><strong>Status :</strong>Refund</span>
                     </div>
                     <div class="col-md-6">
                         <div class="tracking">
                             <div class="steps-progressbar">
                                 <ul style="font-size: 12px;">
-                                    <li class="previous">Paid</li>
-                                    <li class="active">Packing</li>
+                                    <li class="previous">Payment</li>
+                                    <li class="active">Refund</li>
                                     <li>Shipping</li>
                                     <li>Delivered</li>
                                 </ul>
                             </div>
                             <div class="text-center" style="padding-top: 5px;">
                               <button class="btn btn-primary border rounded-0" type="button" style="background-color: rgb(0,0,0);width: 150px;margin: 10px;font-size: 14px;">View order</button>
-                              <button class="btn btn-primary border rounded-0" type="button" style="width: 150px;color: rgb(0,0,0);font-size: 14px;background-color: rgb(252,252,252);">Tracking</button></div>
+                              <button class="btn btn-primary border rounded-0" type="button" style="width: 150px;color: rgb(0,0,0);font-size: 14px;background-color: rgb(252,252,252);" disabled>Refund</button></div>
                         </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
+
+
+      <div class="card bg-light border-dark border rounded-0 shadow-sm" style="margin: 10px;">
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column">
+                      <span><strong>Order ID :</strong> #CEL1234</span>
+                        <span><strong>Date :</strong> Jan, 20, 2021</span>
+                        <span><strong>Items :</strong> 3</span>
+                        <span><strong>Total transaction :</strong> IDR 340.000</span>
+                        <span><strong>Status :</strong>Shipping</span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tracking">
+                            <div class="steps-progressbar">
+                                <ul style="font-size: 12px;">
+                                    <li class="previous">Payment</li>
+                                    <li class="previous">Packing</li>
+                                    <li class="active"> Shipping</li>
+                                    <li>Delivered</li>
+                                </ul>
+                            </div>
+                            <div class="text-center" style="padding-top: 5px;">
+                              <button class="btn btn-primary border rounded-0" type="button" style="background-color: rgb(0,0,0);width: 150px;margin: 10px;font-size: 14px;">View order</button>
+                              <button class="btn btn-primary border rounded-0" type="button" style="width: 150px;color: rgb(0,0,0);font-size: 14px;background-color: rgb(252,252,252);" >Tracking</button></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="card bg-light border-dark border rounded-0 shadow-sm" style="margin: 10px;">
+      <div class="card-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 d-flex flex-column">
+                    <span><strong>Order ID :</strong> #CEL1234</span>
+                      <span><strong>Date :</strong> Jan, 20, 2021</span>
+                      <span><strong>Items :</strong> 3</span>
+                      <span><strong>Total transaction :</strong> IDR 340.000</span>
+                      <span><strong>Status :</strong>Delivered</span>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="tracking">
+                          <div class="steps-progressbar">
+                              <ul style="font-size: 12px;">
+                                  <li class="previous">Payment</li>
+                                  <li class="previous">Packing</li>
+                                  <li class="previous"> Shipping</li>
+                                  <li class="active">Delivered</li>
+                              </ul>
+                          </div>
+                          <div class="text-center" style="padding-top: 5px;">
+                            <button class="btn btn-primary border rounded-0" type="button" style="background-color: rgb(0,0,0);width: 150px;margin: 10px;font-size: 14px;">View order</button>
+                            <button class="btn btn-primary border rounded-0" type="button" style="width: 150px;color: rgb(0,0,0);font-size: 14px;background-color: rgb(252,252,252);" disabled>Delivered</button></div>
+                      </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+          
 
       <!-- Contain-profil-->
       </div>
@@ -255,6 +405,7 @@
     <script src="assets/js/dropdown-nav.js"></script>
     <script src="assets/js/fixed-navbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="https://www.stadget.com/cdn/widget-init.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/product-detail.js"></script>
@@ -262,6 +413,7 @@
     <script src="assets/js/search-navbar.js"></script>
     <script src="assets/js/share-link-note.js"></script>
     <script src="assets/js/show-element.js"></script>
+    <script src="assets/js/side-cart.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/Swipe-Slider-7.js"></script>
 </body>
