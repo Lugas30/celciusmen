@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/typicons.min.css">
@@ -31,116 +32,89 @@
 </head>
 
 <body>
-    <h1 class="text-center title-header">SHIPPING METHOD</h1>
+    <h1 class="text-center title-header">SHIPPING</h1>
     <div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 pb-3">
-                    <p class="title-header-shipping">Choose your shipping address :</p>
-                    <div>
-                        <form class="bs-accordion" action="&quot;">
-                            <div id="accordion" class="panel-group">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h1 class="panel-title"><label class="container-radio" for="r11" style="width : 350px"><input type="radio" id="r11" class="input" name="occupation" value="Same-address" required="" checked="">&nbsp;Same as account address<span class="checkmark"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a></span></label></h1>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="identity">
-                                                <p>Kristanto Wijaya</p>
-                                                <p>Jl. Pondok Indah Raya No. 9</p>
-                                                <p>Rumah pagar hijau depan sekolah SD</p>
-                                                <p>Jawabarat , Depok , Beji , 19550</p>
-                                                <p>085866674xxx</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h1 class="panel-title"><label class="container-radio" for="r12" style="width : 350px"><input type="radio" id="r12" class="input" name="occupation" value="New-address" required="">&nbsp;New address<span class="checkmark"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a></span></label></h1>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="px-3"><div class="group">
-    <input class="ginput" type="text" required>
-    <label class="glabel">FIRST NAME</label>
-</div>
-
-
-<div class="group">
-    <input class="ginput" type="text" required>
-    <label class="glabel">LAST NAME</label>
-</div>
-
-
-<div class="group">
-    <input class="ginput" type="text" required>
-    <label class="glabel">ADDRESS</label>
-</div>
-
-
-<div class="group">
-    <input class="ginput" type="text" required>
-    <label class="glabel">MORE INFO</label>
-</div>
-
-
-
-                                                <div class="py-3">
-                                                    <div class="group-form-select"><span class="label-form"><strong>PROVINCE</strong></span><select class="form-control form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
-                                                        <span
-                                                            class="bar-btm"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="py-3">
-                                                    <div class="group-form-select"><span class="label-form"><strong>CITY</strong></span><select class="form-control form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
-                                                        <span
-                                                            class="bar-btm"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="py-3">
-                                                    <div class="group-form-select"><span class="label-form"><strong>DISTRICT</strong></span><select class="form-control form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
-                                                        <span
-                                                            class="bar-btm"></span>
-                                                    </div>
-                                                </div><div class="group">
-    <input class="ginput" type="text" required>
-    <label class="glabel">E-MAIL</label>
-</div>
-
-
-<div class="group">
-    <input class="ginput" type="text" required>
-    <label class="glabel">ZIP CODE</label>
-</div>
-
-
-<div class="group">
-    <input class="ginput" type="text" required>
-    <label class="glabel">PHONE NUMBER</label>
-</div>
-
-
-</div>
-                                        </div>
-                                    </div>
+                    <div class="header-box">
+                        <h1>SHIPPING ADDRESS</h1>
+                    </div>
+                    <div class="px-4 py-2 my-3">
+                        <div class="group"><input type="text" id="name" class="ginput" required="" value=""><label class="glabel">NAME</label></div>
+                        <div class="group"><input type="text" id="address" class="ginput" required="" value=""><label class="glabel">ADDRESS</label></div>
+                        <div class="group"><input type="text" id="address-as" class="ginput" required="" value=""><label class="glabel">ADDRESS AS<span class="pl-2" style="font-size: 12px;">(Home, Office, etc.)</span></label></div>
+                        <div>
+                            <div class="py-3">
+                                <div class="group-form-select"><span class="label-form"><strong>PROVINCE</strong></span><select id="province" class="form-select-input" name="province"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
+                                    <span
+                                        class="bar-btm"></span>
                                 </div>
                             </div>
-                        </form>
+                            <div class="py-3">
+                                <div class="group-form-select"><span class="label-form"><strong>CITY / KAB.</strong></span><select class="form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
+                                    <span
+                                        class="bar-btm"></span>
+                                </div>
+                            </div>
+                            <div class="py-3">
+                                <div class="group-form-select"><span class="label-form"><strong>DISTRICT / KEC.</strong></span><select class="form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
+                                    <span
+                                        class="bar-btm"></span>
+                                </div>
+                            </div>
+                            <div class="group"><input type="text" class="ginput" required=""><label class="glabel">ZIP CODE</label></div>
+                            <div class="group"><input type="text" class="ginput" required="" name=""><label class="glabel">PHONE NUMBER</label></div>
+                            <div class="py-3">
+                                <div class="group-form-select"><span class="label-form"><strong>COURIER</strong></span><select class="form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
+                                    <span
+                                        class="bar-btm"></span>
+                                </div>
+                            </div>
+                            <div class="py-3">
+                                <div class="group-form-select"><span class="label-form"><strong>SERVICE</strong></span><select class="form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
+                                    <span
+                                        class="bar-btm"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="pos-btn"><a class="btn btn-type5" role="button" href="payment.html">NEXT YO PAYMENT</a></div>
                 </div>
                 <div class="col-md-6 pb-3">
+                    <div class="header-box">
+                        <h1>NOTE FOR SELLER</h1>
+                    </div>
+                    <div class="px-4 py-2">
+                        <div class="py-2">
+                            <p class="pt-2 pb-3"><em>If you have some information for the seller you can leave them in the box below</em><br></p>
+                        </div>
+                        <div class="input-button-coupon clean-block-20"><div class="group">
+    <input class="ginput" type="text" required>
+    <label class="glabel">ENTER NOTE HERE</label>
+</div>
+
+
+</div>
+                    </div>
+                    <div class="header-box">
+                        <h1>PRODUCT ITEMS</h1>
+                    </div>
+                    <div class="px-4 py-3">
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex justify-content-between py-3 border-bottom"><span>Graphic Embro T-shirt Yellow<br><span style="font-size: 14px;">Yellow (S) x 2 , weight : 600 gr , IL2203B<br></span></span><span><strong>IDR 290.000</strong><br></span></li>
+                            <li class="d-flex justify-content-between py-3 border-bottom"><span>Graphic Embro T-shirt Yellow<br><span style="font-size: 14px;">Yellow (S) x 2 , weight : 300 gr ,&nbsp;IL2203B<br></span></span><span><strong>IDR 145.000</strong><br></span></li>
+                        </ul>
+                    </div>
                     <div class="header-box">
                         <h1>ORDER SUMMARY</h1>
                     </div>
                     <div class="px-4 py-3"><ul class="list-unstyled mb-4">
-    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>IDR 1.197.000</strong></li>
-    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping</strong><strong>IDR 0</strong></li>
+    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>IDR 439.000</strong></li>
+    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping</strong><strong>IDR 20.000</strong></li>
     <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Discount</strong><strong>IDR 0</strong></li>
-    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong><strong class="total-price-sum">IDR 1.222.000</strong></li>
+    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong><strong class="total-price-sum">IDR 459.000</strong></li>
 </ul></div>
+                    <div class="pos-btn"><a class="btn btn-type5" role="button" href="midtrans.html">NEXT YO PAYMENT</a></div>
                 </div>
             </div>
         </div>
