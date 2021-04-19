@@ -346,10 +346,18 @@ a.nav-link.active {
   height: auto;
 }
 
+.carthov {
+  color: #969696;
+}
+
+.carthov:hover {
+  color: rgb(0,0,0);
+}
+
 /* -- Search Navbar -- */
 
 .openBtn {
-  background: #ffffff;
+  background: none;
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -439,28 +447,37 @@ a.nav-link.active {
 /* -- Home Page -- */
 
 .banner-warp {
-  width: 100%;
-  height: auto;
+  position: relative;
+  text-align: center;
 }
 
 .main-banner {
   width: 100%;
-  height: 700px;
-  background-size: cover;
+  height: auto;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .main-banner {
+    display: none !important;
+  }
 }
 
 .main-banner-mobile {
   width: 100%;
   height: 700px;
-  background-size: cover;
   object-fit: cover;
-  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-banner-mobile {
+    display: none !important;
+  }
 }
 
 .main-headline {
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -469,6 +486,13 @@ a.nav-link.active {
 .main-headline h1 {
   font-size: 80px;
   color: rgb(255,255,255);
+}
+
+@media (max-width: 768px) {
+  .main-headline h1 {
+    font-size: 45px;
+    color: rgb(255,255,255);
+  }
 }
 
 .main-headline p {
@@ -1173,9 +1197,34 @@ label.radio input:checked + span {
 
 .bg-content-lookbook {
   text-align: center;
-  height: 500px;
+  position: relative;
   background-size: cover;
   object-fit: cover;
+  padding: 0px;
+}
+
+.bann-lookbook {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .bann-lookbook {
+    display: none;
+  }
+}
+
+.bann-lookbook-mobile {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .bann-lookbook-mobile {
+    display: none;
+  }
 }
 
 .pos-center {
@@ -1190,6 +1239,7 @@ label.radio input:checked + span {
   height: 500px;
   background-size: cover;
   object-fit: cover;
+  padding: 0px;
 }
 
 .overlay-updo {
@@ -1579,5 +1629,85 @@ label.radio input:checked + span {
     font-weight: 400;
     text-align: center;
   }
+}
+
+/* -- Location -- */
+
+.img-info {
+  width: 100%;
+  height: auto;
+}
+
+.area-selector {
+  width: 300px;
+}
+
+.detail-frame {
+  text-align: center;
+}
+
+.detail-frame span {
+  font-size: 14px;
+}
+
+.detail-frame h1 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+/* -- News -- */
+
+.container-news {
+  padding: 0px 200px 0px;
+}
+
+@media (max-width: 768px) {
+  .container-news {
+    padding: 0px 50px 0px;
+  }
+}
+
+.news-head {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.news-detail-header {
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .news-detail-header {
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+  }
+}
+
+.news-date {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .news-date {
+    font-size: 18px;
+  }
+}
+
+/* -- Special Fiture -- */
+
+.sf-heading {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sf-photo {
+  width: 100%;
+  height: auto;
 }
 
