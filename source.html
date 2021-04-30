@@ -41,55 +41,69 @@
                     <form action="/action_page.php"><input class="form-control" type="text" placeholder="Search.." name="search"><button class="btn" type="submit"><i class="fa fa-search"></i></button></form>
                 </div>
             </div><button class="btn btn-primary openBtn" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Search" onclick="openSearch()"><i class="icon-magnifier" style="color: rgb(0,0,0);"></i></button></div>
-        <div class="p-2" style="background-color: #ebebeb;"><a class="btn btn-type1" role="button" href="index.html">SHOP THE COLLECTION</a><a class="btn btn-type2" role="button" href="index.html">SHOP THE COLLECTION</a><a class="btn btn-type3" role="button" href="index.html">SHOP THE COLLECTION</a>
+        <div>
+            <div id="myOverlay" class="overlay"><span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa fa-close"></i></span>
+                <div class="overlay-content">
+                    <h1 class="clean-block-15" style="font-size: 50px ; color: white;">You&nbsp;can&nbsp;search&nbsp;anything&nbsp;here<br></h1>
+                    <form action="/action_page.php"><input class="form-control" type="text" placeholder="Search.." name="search"><button class="btn" type="submit"><i class="fa fa-search"></i></button></form>
+                </div>
+            </div><button class="btn btn-primary openBtn" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Search" onclick="openSearch()"><i class="icon-magnifier" style="color: rgb(0,0,0);"></i><span class="sc-text" style="font-size: 14px;">&nbsp;Search</span><svg class="sc-line"height="5" width="100">
+  <line x1="5" y1="5" x2="100" y2="5" style="stroke:rgb(0,0,0);stroke-width:2" /></button></div>
+        <div
+            class="p-2" style="background-color: #ebebeb;"><a class="btn btn-type1" role="button" href="index.html">SHOP THE COLLECTION</a><a class="btn btn-type2" role="button" href="index.html">SHOP THE COLLECTION</a><a class="btn btn-type3" role="button" href="index.html">SHOP THE COLLECTION</a>
             <a
                 class="btn btn-type4" role="button" href="index.html">SHOP THE COLLECTION</a>
-        </div>
-        <div class="p-2" style="background-color: #ebebeb;"><a class="btn btn-type5" role="button" href="index.html">SHOW MORE</a><a class="btn btn-type2" role="button" href="index.html">SHOP THE COLLECTION</a></div>
-        <div class="p-2" style="background-color: #ebebeb;"><a class="btn btn-type1-small" role="button" href="index.html">SHOP THE COLLECTION</a><a class="btn btn-share" role="button" href="index.html">SHARE&nbsp;<i class="fas fa-share-alt"></i></a></div>
+    </div>
+    <div class="p-2" style="background-color: #ebebeb;"><a class="btn btn-type5" role="button" href="index.html">SHOW MORE</a><a class="btn btn-type2" role="button" href="index.html">SHOP THE COLLECTION</a></div>
+    <div class="p-2" style="background-color: #ebebeb;"><a class="btn btn-type1-small" role="button" href="index.html">SHOP THE COLLECTION</a><a class="btn btn-share" role="button" href="index.html">SHARE&nbsp;<i class="fas fa-share-alt"></i></a></div>
+    <div class="py-3">
         <div class="py-3">
-            <div class="py-3">
-                <div class="group-form-select"><span class="label-form"><strong>PROVINCE</strong></span><select class="form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
-                    <span
-                        class="bar-btm"></span>
-                </div>
-            </div><div class="group">
+            <div class="group-form-select"><span class="label-form"><strong>PROVINCE</strong></span><select class="form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
+                <span
+                    class="bar-btm"></span>
+            </div>
+        </div><div class="group">
     <input class="ginput" type="text" required>
     <label class="glabel">PROVINCE</label>
 </div>
 
 
-</div>
-        <div class="radio-button-warp-size-chart p-4">
-            <p>Silahkan pilih yang mau anda pilih :</p><label class="container-radio"><input type="radio" class="input" name="radio" checked=""><span class="checkmark"></span>Jakarta</label><label class="container-radio">Depok<input type="radio" class="input" name="radio"><span class="checkmark"></span></label>
-            <label
-                class="container-radio">Tangerang<input type="radio" class="input" name="radio"><span class="checkmark"></span></label>
+
+        <div class="group"><input type="text" class="ginput" required=""><label class="glabel">SUBSCRIBE</label></div>
+        <div class="group"><input type="text" class="ginput-subs" required="" placeholder="Your email address">
+            <div class="subs-button"><a class="btn btn-type1-small" role="button" href="index.html">SUBSCRIBE</a></div>
         </div>
-        <div>
-            <form class="bs-accordion" action="&quot;">
-                <div id="accordion" class="panel-group">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h1 class="panel-title"><label class="container-radio" for="r11" style="width : 350px"><input type="radio" id="r11" class="input" name="occupation" value="Same-address" required="" checked="">&nbsp;Same as account address<span class="checkmark"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a></span></label></h1>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <div class="identity">
-                                    <p>Kristanto Wijaya</p>
-                                    <p>Jl. Pondok Indah Raya No. 9</p>
-                                    <p>Jawabarat , Depok , Beji , 19550</p>
-                                    <p>085866674xxx</p>
-                                </div>
+    </div>
+    <div class="radio-button-warp-size-chart p-4">
+        <p>Silahkan pilih yang mau anda pilih :</p><label class="container-radio"><input type="radio" class="input" name="radio" checked=""><span class="checkmark"></span>Jakarta</label><label class="container-radio">Depok<input type="radio" class="input" name="radio"><span class="checkmark"></span></label>
+        <label
+            class="container-radio">Tangerang<input type="radio" class="input" name="radio"><span class="checkmark"></span></label>
+    </div>
+    <div>
+        <form class="bs-accordion" action="&quot;">
+            <div id="accordion" class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title"><label class="container-radio" for="r11" style="width : 350px"><input type="radio" id="r11" class="input" name="occupation" value="Same-address" required="" checked="">&nbsp;Same as account address<span class="checkmark"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a></span></label></h1>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="identity">
+                                <p>Kristanto Wijaya</p>
+                                <p>Jl. Pondok Indah Raya No. 9</p>
+                                <p>Jawabarat , Depok , Beji , 19550</p>
+                                <p>085866674xxx</p>
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h1 class="panel-title"><label class="container-radio" for="r12" style="width : 350px"><input type="radio" id="r12" class="input" name="occupation" value="New-address" required="">&nbsp;New address<span class="checkmark"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a></span></label></h1>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <div class="px-3"><div class="group">
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title"><label class="container-radio" for="r12" style="width : 350px"><input type="radio" id="r12" class="input" name="occupation" value="New-address" required="">&nbsp;New address<span class="checkmark"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a></span></label></h1>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="px-3"><div class="group">
     <input class="ginput" type="text" required>
     <label class="glabel">FIRST NAME</label>
 </div>
@@ -114,24 +128,24 @@
 
 
 
-                                    <div class="py-3">
-                                        <div class="group-form-select"><span class="label-form"><strong>PROVINCE</strong></span><select class="form-control form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
-                                            <span
-                                                class="bar-btm"></span>
-                                        </div>
+                                <div class="py-3">
+                                    <div class="group-form-select"><span class="label-form"><strong>PROVINCE</strong></span><select class="form-control form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
+                                        <span
+                                            class="bar-btm"></span>
                                     </div>
-                                    <div class="py-3">
-                                        <div class="group-form-select"><span class="label-form"><strong>CITY</strong></span><select class="form-control form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
-                                            <span
-                                                class="bar-btm"></span>
-                                        </div>
+                                </div>
+                                <div class="py-3">
+                                    <div class="group-form-select"><span class="label-form"><strong>CITY</strong></span><select class="form-control form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
+                                        <span
+                                            class="bar-btm"></span>
                                     </div>
-                                    <div class="py-3">
-                                        <div class="group-form-select"><span class="label-form"><strong>DISTRICT</strong></span><select class="form-control form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
-                                            <span
-                                                class="bar-btm"></span>
-                                        </div>
-                                    </div><div class="group">
+                                </div>
+                                <div class="py-3">
+                                    <div class="group-form-select"><span class="label-form"><strong>DISTRICT</strong></span><select class="form-control form-select-input"><option value="12" selected="">--</option><option value="13">Jawabarat</option><option value="14">Banten</option><option value="15">DKI Jakarta</option></select>
+                                        <span
+                                            class="bar-btm"></span>
+                                    </div>
+                                </div><div class="group">
     <input class="ginput" type="text" required>
     <label class="glabel">E-MAIL</label>
 </div>
@@ -150,14 +164,14 @@
 
 
 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div>
-            <div class="warp-size-chart">
+            </div>
+        </form>
+    </div>
+    <div>
+        <div class="warp-size-chart">
 	            <div class="text-center">
 					<label class="radio"> 
 						<input type="radio" name="size" value="S"> 
@@ -185,8 +199,8 @@
 					</label>
 	            </div>
 	       </div>
-        </div>
-        <div class="pb-5"><a class="btn btn-share" role="button" href="index.html" data-toggle="modal" data-target="#exampleModal">SHARE&nbsp;<i class="fas fa-share-alt"></i></a><!-- Masukan data-modal & data-target ke button -->
+    </div>
+    <div class="pb-5"><a class="btn btn-share" role="button" href="index.html" data-toggle="modal" data-target="#exampleModal">SHARE&nbsp;<i class="fas fa-share-alt"></i></a><!-- Masukan data-modal & data-target ke button -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content col-12">
@@ -216,38 +230,38 @@
         </div>
     </div>
 </div></div>
-        <div class="p-3">
-            <div class="input-group"><span class="input-group-btn"><button class="btn btn-minus btn-number quantity-left-minus" type="button" data-type="minus" data-field=""><i class="icon ion-minus-round"></i></button></span><input type="text" id="quantity" class="form-control input-number"
-                    value="1" min="1" max="5" style="font-size: 14px;"><span class="input-group-btn"><a class="btn btn-plus btn-number quantity-right-plus" role="button" data-type="plus" data-field=""><i class="icon ion-plus-round"></i></a></span></div>
+    <div class="p-3">
+        <div class="input-group"><span class="input-group-btn"><button class="btn btn-minus btn-number quantity-left-minus" type="button" data-type="minus" data-field=""><i class="icon ion-minus-round"></i></button></span><input type="text" id="quantity" class="form-control input-number"
+                value="1" min="1" max="5" style="font-size: 14px;"><span class="input-group-btn"><a class="btn btn-plus btn-number quantity-right-plus" role="button" data-type="plus" data-field=""><i class="icon ion-plus-round"></i></a></span></div>
+    </div>
+    <div><span style="font-size:16px;cursor:pointer" onclick="openNav()"><i class="icon-bag"></i></span><span class="badge badge-pill badge-light" display="absolute">0</span>
+        <div id="mySidenav" class="sidenav shadow-sm"><a class="closebtn" href="javascript:void(0)" onclick="closeNav()"><i class="material-icons">close</i></a>
+            <div class="inner-sidenav">
+                <h1 class="title-sidenav">SHOPPING BAG</h1>
+                <div class="block-layout">
+                    <div class="imgx"><img src="assets/img/prod1.jpg" width="70px" height="auto"></div>
+                    <div class="dtlx"><span>Graphic Embro T-shirt Yellow<br></span><span>IDR 249.000,&nbsp; x&nbsp; (1)<br></span><span>M</span></div>
+                </div>
+                <hr>
+                <div class="block-layout">
+                    <div class="imgx"><img src="assets/img/prod1.jpg" width="70px" height="auto"></div>
+                    <div class="dtlx"><span>Graphic Embro T-shirt Yellow<br></span><span>IDR 249.000,&nbsp; x&nbsp; (1)<br></span><span>M</span></div>
+                </div>
+                <hr>
+                <div class="block-layout">
+                    <div class="imgx"><img src="assets/img/prod1.jpg" width="70px" height="auto"></div>
+                    <div class="dtlx"><span>Graphic Embro T-shirt Yellow<br></span><span>IDR 249.000,&nbsp; x&nbsp; (1)<br></span><span>M</span></div>
+                </div>
+                <hr>
+                <div class="block-layout">
+                    <div class="imgx"><img src="assets/img/prod1.jpg" width="70px" height="auto"></div>
+                    <div class="dtlx"><span>Graphic Embro T-shirt Yellow<br></span><span>IDR 249.000,&nbsp; x&nbsp; (1)<br></span><span>M</span></div>
+                </div>
+                <hr><a class="btn btn-checkout-side" role="button" href="shopping-bag.html">GO TO SHOPPING BAG</a></div>
         </div>
-        <div><span style="font-size:16px;cursor:pointer" onclick="openNav()"><i class="icon-bag"></i></span><span class="badge badge-pill badge-light" display="absolute">0</span>
-            <div id="mySidenav" class="sidenav shadow-sm"><a class="closebtn" href="javascript:void(0)" onclick="closeNav()"><i class="material-icons">close</i></a>
-                <div class="inner-sidenav">
-                    <h1 class="title-sidenav">SHOPPING BAG</h1>
-                    <div class="block-layout">
-                        <div class="imgx"><img src="assets/img/prod1.jpg" width="70px" height="auto"></div>
-                        <div class="dtlx"><span>Graphic Embro T-shirt Yellow<br></span><span>IDR 249.000,&nbsp; x&nbsp; (1)<br></span><span>M</span></div>
-                    </div>
-                    <hr>
-                    <div class="block-layout">
-                        <div class="imgx"><img src="assets/img/prod1.jpg" width="70px" height="auto"></div>
-                        <div class="dtlx"><span>Graphic Embro T-shirt Yellow<br></span><span>IDR 249.000,&nbsp; x&nbsp; (1)<br></span><span>M</span></div>
-                    </div>
-                    <hr>
-                    <div class="block-layout">
-                        <div class="imgx"><img src="assets/img/prod1.jpg" width="70px" height="auto"></div>
-                        <div class="dtlx"><span>Graphic Embro T-shirt Yellow<br></span><span>IDR 249.000,&nbsp; x&nbsp; (1)<br></span><span>M</span></div>
-                    </div>
-                    <hr>
-                    <div class="block-layout">
-                        <div class="imgx"><img src="assets/img/prod1.jpg" width="70px" height="auto"></div>
-                        <div class="dtlx"><span>Graphic Embro T-shirt Yellow<br></span><span>IDR 249.000,&nbsp; x&nbsp; (1)<br></span><span>M</span></div>
-                    </div>
-                    <hr><a class="btn btn-checkout-side" role="button" href="shopping-bag.html">GO TO SHOPPING BAG</a></div>
-            </div>
-        </div>
-        <div class="py-5">
-            <h1 class="sf-heading">SPECIAL FEATURES</h1> <div style="width:100%">  <div id="circlr" >
+    </div>
+    <div class="py-5">
+        <h1 class="sf-heading">SPECIAL FEATURES</h1> <div style="width:100%">  <div id="circlr" >
               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/1.png">
               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/2.png">
               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/3.png">
@@ -310,7 +324,55 @@
       loader : 'loader'
     });
   </script></div>
+    </div><div class="col-md-6">
+    <div class="header-box">
+        <h1>Product</h1>
     </div>
+    <div class="item-list px-4 py-2">
+        <div class="row">
+            <div class="col-md-3 col-lg-4"><img class="frame-img py-2" src="assets/img/prod1.jpg" /></div>
+            <div class="col itemlist-desc py-2"><a class="prod-title" href="#go to product">Celcius Speed Rabel Tees Yellow</a>
+                <p class="normal-price-item-list">IDR 145.000</p>
+                <div class="detail-prod" style="font-size: 14px;">
+                    <p>Colour : Yellow</p>
+                    <p>Size : M</p>
+                    <p>Weight : 300 gr</p>
+                    <p>SKU : IL2203B</p>
+                </div>
+                <div class="price-item-list">
+                    <p class="normal-price-item-list">TOTAL : IDR 145.000</p>
+                </div>
+                <div class="pb-2">
+                    <div class="input-group"><span class="input-group-btn"><button class="btn btn-minus btn-number quantity-left-minus" type="button" data-type="minus" data-field><i class="icon ion-minus-round"></i></button></span><input type="text" id="quantity" class="form-control input-number"
+                            value="1" min="1" max="5" /><span class="input-group-btn"><a class="btn btn-plus btn-number quantity-right-plus" role="button" data-type="plus" data-field><i class="icon ion-plus-round"></i></a></span></div>
+                </div><a class="btn btn-type2-small mr-2" role="button" href="index.html" style="padding: 2px;padding-top: 3px;"><i class="la la-heart-o"></i></a><a class="btn btn-type2-small" role="button" href="index.html" style="padding: 2px;padding-top: 3px;"><i class="la la-close"></i></a></div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-3 col-lg-4"><img class="frame-img py-2" src="assets/img/prod1.jpg" /></div>
+            <div class="col itemlist-desc py-2"><a class="prod-title" href="#go to product">Celcius Speed Rabel Tees Yellow</a>
+                <div class="price-block">
+                    <p class="disc-price-item-list pr-2"><span style="text-decoration: line-through;">IDR 249.000</span></p>
+                    <p class="normal-price-item-list">IDR 145.000</p>
+                </div>
+                <div class="detail-prod" style="font-size: 14px;">
+                    <p>Colour : Yellow</p>
+                    <p>Size : M</p>
+                    <p>Weight : 300 gr</p>
+                    <p>SKU : IL2203B</p>
+                </div>
+                <div class="price-item-list">
+                    <p class="normal-price-item-list">TOTAL : IDR 145.000</p>
+                </div>
+                <div class="pb-2">
+                    <div class="input-group"><span class="input-group-btn"><button class="btn btn-minus btn-number quantity-left-minus" type="button" data-type="minus" data-field><i class="icon ion-minus-round"></i></button></span><input type="text" id="quantity" class="form-control input-number"
+                            value="1" min="1" max="5" /><span class="input-group-btn"><a class="btn btn-plus btn-number quantity-right-plus" role="button" data-type="plus" data-field><i class="icon ion-plus-round"></i></a></span></div>
+                </div><a class="btn btn-type2-small mr-2" role="button" href="index.html" style="padding: 2px;padding-top: 3px;"><i class="la la-heart-o"></i></a><a class="btn btn-type2-small" role="button" href="index.html" style="padding: 2px;padding-top: 3px;"><i class="la la-close"></i></a></div>
+        </div>
+        <hr />
+        <hr />
+    </div>
+</div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>

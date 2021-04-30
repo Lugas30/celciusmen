@@ -38,7 +38,7 @@
             <div
                 class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item d-lg-flex align-items-lg-center px-2 dropdown" role="presentation"><a class="nav-link d-lg-flex catogary" id="navbarDropdown" href="index.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>MENS</strong></a>
+                    <li class="nav-item d-lg-flex align-items-lg-center px-2 dropdown" role="presentation"><a class="nav-link text-dark d-lg-flex catogary" id="navbarDropdown" href="index.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>MENS</strong></a>
                         <div
                             class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="container-fluid px-5">
@@ -82,7 +82,7 @@
                                             <li class="nav-items"><a class="nav-link i" href="#">Ramadhan Kareem</a></li>
                                             <li class="nav-items"><a class="nav-link i" href="#">Christmas Eve</a></li>
                                             <li class="nav-items"><a class="nav-link active" href="#">View all</a></li>
-                                            <li class="nav-items"><a class="nav-link active" href="#">Special price</a></li>
+                                            <li class="nav-items sale-dropdown"><a class="text-danger nav-link" href="#">Special price</a></li>
                                             <li class="nav-items"><a class="nav-link active" href="index.html">Mens page</a></li>
                                         </ul>
                                     </div>
@@ -101,7 +101,7 @@
                             </div>
         </div>
         </li>
-        <li class="nav-item d-lg-flex align-items-lg-center px-2 dropdown" role="presentation"><a class="nav-link catogary" id="navbarDropdown" href="index.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>RUSH</strong></a>
+        <li class="nav-item d-lg-flex align-items-lg-center px-2 dropdown" role="presentation"><a class="nav-link text-dark catogary" id="navbarDropdown" href="index.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>RUSH</strong></a>
             <div class="dropdown-menu"
                 aria-labelledby="navbarDropdown">
                 <div class="container-fluid px-5">
@@ -145,7 +145,7 @@
                                 <li class="nav-items"><a class="nav-link i" href="#">Commuter</a></li>
                                 <li class="nav-items"><a class="nav-link active" href="#">View all</a></li>
                                 <li class="nav-items"><a class="nav-link active" href="#">Special price</a></li>
-                                <li class="nav-items"><a class="nav-link active" href="index.html">Rush page</a></li>
+                                <li class="nav-items"><a class="nav-link active" href="index-Rush.html">Rush page</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3 col-lg-3">
@@ -163,13 +163,25 @@
                 </div>
             </div>
         </li>
-        <li class="nav-item d-lg-flex align-items-lg-center px-2" role="presentation"><a class="nav-link" href="kids.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;"><strong>KIDS</strong></a></li>
-        <li class="nav-item d-lg-flex align-items-lg-center px-2" role="presentation"><a class="nav-link" href="content.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;"><strong>CONTENT</strong></a></li>
+        <li class="nav-item d-lg-flex align-items-lg-center px-2" role="presentation"><a class="nav-link text-dark" href="index-Kids.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;"><strong>KIDS</strong></a></li>
+        <li class="nav-item d-lg-flex align-items-lg-center px-2" role="presentation"><a class="nav-link text-dark" href="whatsnew.html" style="font-size: 14px;padding-top: 15px;padding-bottom: 15px;"><strong>WHAT'S NEW</strong></a></li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#">
+                <div>
+                    <div id="myOverlay" class="overlay"><span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa fa-close"></i></span>
+                        <div class="overlay-content">
+                            <h1 class="clean-block-15" style="font-size: 50px ; color: white;">You&nbsp;can&nbsp;search&nbsp;anything&nbsp;here<br></h1>
+                            <form class="form-inline" action="/action_page.php"><input class="form-control" type="text" placeholder="Search.." name="search"><button class="btn" type="submit"><i class="fa fa-search"></i></button></form>
+                        </div>
+                    </div><button class="btn btn-primary openBtn" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Search" onclick="openSearch()"><i class="icon-magnifier"></i><span class="sc-text" style="font-size: 14px;">&nbsp;Search</span><svg class="sc-line"height="5" width="120">
+  <line x1="5" y1="5" x2="120" y2="5" style="stroke:black;stroke-width:3" /></button></div>
+            </a>
+        </li>
+        <li class="nav-item px-2" role="presentation" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Account"><a class="nav-link text-dark" href="account.html" style="padding-top: 15px;padding-bottom: 15px;"><i class="icon-user"></i></a></li>
         <li class="nav-item px-2" role="presentation" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom"
-            title="Account"><a class="nav-link" href="account.html" style="padding-top: 15px;padding-bottom: 15px;"><i class="icon-user"></i></a></li>
-        <li class="nav-item px-2" role="presentation" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Location"><a class="nav-link" href="location.html" style="padding-top: 15px;padding-bottom: 15px;"><i class="icon-location-pin"></i></a></li>
-        <li class="nav-item d-md-flex d-lg-flex align-items-md-center align-items-lg-center px-2" role="presentation" data-toggle="tooltip"
-            data-bs-tooltip="" data-placement="bottom" title="Shopping bag">
+            title="Location"><a class="nav-link text-dark" href="location.html" style="padding-top: 15px;padding-bottom: 15px;"><i class="icon-location-pin"></i></a></li>
+        <li class="nav-item d-md-flex d-lg-flex align-items-md-center align-items-lg-center px-2" role="presentation"
+            data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" title="Shopping bag">
             <div style="padding-top: 15px;padding-bottom: 15px;"><span class="carthov" style="font-size:16px;cursor:pointer" onclick="openNav()"><i class="icon-bag"></i></span><span class="badge badge-pill badge-light" display="absolute">0</span>
                 <div id="mySidenav" class="sidenav shadow-sm"><a class="closebtn" href="javascript:void(0)" onclick="closeNav()"><i class="material-icons">close</i></a>
                     <div class="inner-sidenav">
@@ -197,75 +209,133 @@
                 </div>
             </div>
         </li>
-        <li class="nav-item d-md-flex d-lg-flex align-items-md-center align-items-lg-center px-2" role="presentation" title="Search">
-            <div id="myOverlay" class="overlay"><span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa fa-close"></i></span>
-                <div class="overlay-content">
-                    <h1 class="clean-block-15" style="font-size: 50px ; color: white;">You&nbsp;can&nbsp;search&nbsp;anything&nbsp;here<br></h1>
-                    <form class="form-inline" action="/action_page.php"><input class="form-control" type="text" placeholder="Search.." name="search"><button class="btn" type="submit"><i class="fa fa-search"></i></button></form>
-                </div>
-            </div><button class="btn btn-primary openBtn py-2" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" type="button" title="Search" onclick="openSearch()" style="padding: 0px;padding-top: 15px;padding-bottom: 15px;"><i class="icon-magnifier" style="color: rgb(145,145,145);"></i></button></li>
         </ul>
         </div>
         </div>
     </nav>
-    <div class="banner-warp"><img class="main-banner" src="assets/img/bann-men1.jpg"><img class="main-banner-mobile" src="assets/img/bann-mob1.jpg">
+    <div class="banner-warp pb-5"><img class="main-banner" src="assets/img/bann-men1.jpg"><img class="main-banner-mobile" src="assets/img/bann-mob1.jpg">
         <div class="main-headline">
             <h1>SPEED REBEL</h1>
-            <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4 px-5" role="button" href="index.html">VIEW</a></div>
-    </div>
-    <div style="position: relative;overflow: hidden;padding-top: 56.25%;"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/ai3urgYqp84?loop=1&amp;playlist=ai3urgYqp84&amp;controls=0" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;"></iframe></div>
-    <div class="py-3">
-        <h1 class="sf-heading">SPECIAL FEATURES</h1> <div style="width:100%">  <div id="circlr" >
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/1.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/2.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/3.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/4.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/5.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/6.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/7.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/8.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/10.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/11.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/12.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/13.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/14.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/15.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/16.png">
-             <img data-src= "https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/17.png"> 
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/18.png"> 
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/19.png"> 
-               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/20.png"> 
-               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/21.png">
-               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/22.png">
-               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/23.png">
-               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/24.png">
-               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/25.png">
-               <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/26.png"> 
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/27.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/28.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/29.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/30.png">
-             <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/31.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/32.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/33.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/34.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/35.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/36.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/37.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/38.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/39.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/40.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/41.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/42.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/43.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/44.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/45.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/46.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/47.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/48.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/49.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/50.png">
-              <img data-src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/51.png">
+            <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4" role="button" href="catalog.html">VIEW</a></div>
+    </div><video class="pb-5" height="auto" width="100%" poster="xxx" controls="" autoplay=""><source src="https://ak.picdn.net/shutterstock/videos/1051118314/preview/stock-footage-stylish-businessman-legs-leisure-walking-up-on-stairs-on-vacation-holiday-in-summer-day-man-feet.webm" type="video/mp4"></video>
+    <div
+        class="banner-warp pb-5"><img class="main-banner" src="assets/img/bann-col.jpg"><img class="main-banner-mobile" src="assets/img/bann-mob2.jpg">
+        <div class="main-headline">
+            <h1>COLLECTION</h1>
+            <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4" role="button" href="index.html">VIEW</a></div>
+        </div>
+        <div class="pb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6"><img class="sf-image" src="assets/img/Static.jpg"></div>
+                    <div class="col-md-6">
+                        <div>
+                            <h1 class="sf-heading">360 VIEW&nbsp;&nbsp;<i class="material-icons">rotate_left</i></h1> <div style="width:100%">  <div id="circlr" >
+              <img data-src="assets/img/360pic/1.png">
+              <img data-src="assets/img/360pic/2.png">
+              <img data-src="assets/img/360pic/3.png">
+              <img data-src="assets/img/360pic/4.png">
+              <img data-src="assets/img/360pic/5.png">
+              <img data-src="assets/img/360pic/6.png">
+              <img data-src="assets/img/360pic/7.png">
+              <img data-src="assets/img/360pic/8.png">
+              <img data-src="assets/img/360pic/9.png">
+              <img data-src="assets/img/360pic/10.png">
+              <img data-src="assets/img/360pic/11.png">
+              <img data-src="assets/img/360pic/12.png">
+              <img data-src="assets/img/360pic/13.png">
+              <img data-src="assets/img/360pic/14.png">
+              <img data-src="assets/img/360pic/15.png">
+              <img data-src="assets/img/360pic/16.png">
+              <img data-src="assets/img/360pic/17.png"> 
+              <img data-src="assets/img/360pic/18.png"> 
+              <img data-src="assets/img/360pic/19.png"> 
+              <img data-src="assets/img/360pic/20.png"> 
+              <img data-src="assets/img/360pic/21.png">
+              <img data-src="assets/img/360pic/22.png">
+              <img data-src="assets/img/360pic/23.png">
+              <img data-src="assets/img/360pic/24.png">
+              <img data-src="assets/img/360pic/25.png">
+              <img data-src="assets/img/360pic/26.png"> 
+              <img data-src="assets/img/360pic/27.png">
+              <img data-src="assets/img/360pic/28.png">
+              <img data-src="assets/img/360pic/29.png">
+              <img data-src="assets/img/360pic/30.png">
+              <img data-src="assets/img/360pic/31.png">
+              <img data-src="assets/img/360pic/32.png">
+              <img data-src="assets/img/360pic/33.png">
+              <img data-src="assets/img/360pic/34.png">
+              <img data-src="assets/img/360pic/35.png">
+              <img data-src="assets/img/360pic/36.png">
+              <img data-src="assets/img/360pic/37.png">
+              <img data-src="assets/img/360pic/38.png">
+              <img data-src="assets/img/360pic/39.png">
+              <img data-src="assets/img/360pic/40.png">
+              <img data-src="assets/img/360pic/41.png">
+              <img data-src="assets/img/360pic/42.png">
+              <img data-src="assets/img/360pic/43.png">
+              <img data-src="assets/img/360pic/44.png">
+              <img data-src="assets/img/360pic/45.png">
+              <img data-src="assets/img/360pic/46.png">
+              <img data-src="assets/img/360pic/47.png">
+              <img data-src="assets/img/360pic/48.png">
+              <img data-src="assets/img/360pic/49.png">
+              <img data-src="assets/img/360pic/50.png">
+              <img data-src="assets/img/360pic/51.png">
+              <img data-src="assets/img/360pic/52.png">
+              <img data-src="assets/img/360pic/53.png">
+              <img data-src="assets/img/360pic/54.png">
+              <img data-src="assets/img/360pic/55.png">
+              <img data-src="assets/img/360pic/56.png">
+              <img data-src="assets/img/360pic/57.png">
+              <img data-src="assets/img/360pic/58.png">
+              <img data-src="assets/img/360pic/59.png">
+              <img data-src="assets/img/360pic/60.png">
+              <img data-src="assets/img/360pic/61.png">
+              <img data-src="assets/img/360pic/62.png">
+              <img data-src="assets/img/360pic/63.png">
+              <img data-src="assets/img/360pic/64.png">
+              <img data-src="assets/img/360pic/65.png">
+              <img data-src="assets/img/360pic/66.png">
+              <img data-src="assets/img/360pic/67.png">
+              <img data-src="assets/img/360pic/68.png">
+              <img data-src="assets/img/360pic/69.png">
+              <img data-src="assets/img/360pic/70.png">
+              <img data-src="assets/img/360pic/71.png">
+              <img data-src="assets/img/360pic/72.png">
+              <img data-src="assets/img/360pic/73.png">
+              <img data-src="assets/img/360pic/74.png">
+              <img data-src="assets/img/360pic/75.png">
+              <img data-src="assets/img/360pic/76.png">
+              <img data-src="assets/img/360pic/77.png">
+              <img data-src="assets/img/360pic/78.png">
+              <img data-src="assets/img/360pic/79.png">
+              <img data-src="assets/img/360pic/80.png">
+              <img data-src="assets/img/360pic/81.png">
+              <img data-src="assets/img/360pic/82.png">
+              <img data-src="assets/img/360pic/83.png">
+              <img data-src="assets/img/360pic/84.png">
+              <img data-src="assets/img/360pic/85.png">
+              <img data-src="assets/img/360pic/86.png">
+              <img data-src="assets/img/360pic/87.png">
+              <img data-src="assets/img/360pic/88.png">
+              <img data-src="assets/img/360pic/89.png">
+              <img data-src="assets/img/360pic/90.png">
+              <img data-src="assets/img/360pic/91.png">
+              <img data-src="assets/img/360pic/92.png">
+              <img data-src="assets/img/360pic/93.png">
+              <img data-src="assets/img/360pic/94.png">
+              <img data-src="assets/img/360pic/95.png">
+              <img data-src="assets/img/360pic/96.png">
+              <img data-src="assets/img/360pic/97.png">
+              <img data-src="assets/img/360pic/98.png">
+              <img data-src="assets/img/360pic/99.png">
+              <img data-src="assets/img/360pic/100.png">
+              <img data-src="assets/img/360pic/101.png">
+              <img data-src="assets/img/360pic/102.png">
+              
+
+
              
               <div id="loader"></div>
               </div> </div>
@@ -278,34 +348,37 @@
       loader : 'loader'
     });
   </script></div>
-    <div class="banner-warp"><img class="main-banner" src="assets/img/bann-col.jpg"><img class="main-banner-mobile" src="assets/img/bann-mob2.jpg">
-        <div class="main-headline">
-            <h1>COLLECTION</h1>
-            <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4 px-5" role="button" href="index.html">VIEW</a></div>
-    </div>
-    <div class="banner-warp"><img class="main-banner" src="assets/img/moto3.jpg"><img class="main-banner-mobile" src="assets/img/bann-mob3.jpg">
-        <div class="main-headline">
-            <h1>SPECIAL PRICE</h1>
-            <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4 px-5" role="button" href="index.html">VIEW</a></div>
-    </div>
-    <div>
-        <div class="container-fluid">
-            <div class="row px-3 pt-3">
-                <div class="col-md-6 p-3">
-                    <div class="sub-main-headline">
-                        <h1>RUSH</h1>
-                        <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4 px-5" role="button" href="index.html">VIEW</a></div><img src="assets/img/rush1.jpg" style="width: 100%;"></div>
-                <div class="col-md-6 p-3">
-                    <div class="sub-main-headline">
-                        <h1>KIDS</h1>
-                        <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4 px-5" role="button" href="index.html">VIEW</a></div><img src="assets/img/kids2.jpg" style="width: 100%;"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <h1 class="text-center title-header">WHATS ON</h1>
-    <div class="container-fluid p-3">
-        <div class="row">
-            <div class="col-md-4 pb-3"><figure class="snip1527">
+        <div class="banner-warp pb-5"><img class="main-banner" src="assets/img/moto3.jpg"><img class="main-banner-mobile" src="assets/img/bann-mob3.jpg">
+            <div class="main-headline">
+                <h1>SPECIAL PRICE</h1>
+                <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4" role="button" href="catalog-special-price.html">VIEW</a></div>
+        </div>
+        <div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6" style="padding-right: 0px;padding-left: 0px;">
+                        <div class="sub-main-headline">
+                            <h1>RUSH</h1>
+                            <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4" role="button" href="index.html">VIEW</a></div>
+                        <div class="sub-banner-left"><img src="assets/img/rush1.jpg" style="width: 100%;"></div>
+                    </div>
+                    <div class="col-md-6" style="padding-right: 0px;padding-left: 0px;">
+                        <div class="sub-main-headline">
+                            <h1>KIDS</h1>
+                            <p class="pb-4">Discover the celcius speed rebel vol. 2<br></p><a class="btn btn-type4" role="button" href="index.html">VIEW</a></div>
+                        <div class="sub-banner-right"><img src="assets/img/kids2.jpg" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center title-header">NEWS</h1>
+        <div class="container-fluid p-3">
+            <div class="row">
+                <div class="col-md-4 pb-3"><figure class="snip1527">
   <div class="image"><img src="assets/img/Art.jpg" alt="pr-sample23" /></div>
   <figcaption>
     <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
@@ -315,11 +388,25 @@
       You know what we need, Hobbes? We need an attitude. Yeah, you can't be cool if you don't have an attitude.
     </p>
   </figcaption>
-  <a href="#"></a>
+  <a href="news.html"></a>
 </figure>
 
 </div>
-            <div class="col-md-4 pb-3"><figure class="snip1527">
+                <div class="col-md-4 pb-3"><figure class="snip1527">
+  <div class="image"><img src="assets/img/art.jpg" alt="pr-sample23" /></div>
+  <figcaption>
+    <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+    <h3>The World Ended Yesterday</h3>
+    <p>
+
+      You know what we need, Hobbes? We need an attitude. Yeah, you can't be cool if you don't have an attitude.
+    </p>
+  </figcaption>
+  <a href="news.html"></a>
+</figure>
+
+</div>
+                <div class="col-md-4 pb-3"><figure class="snip1527">
   <div class="image"><img src="assets/img/art.jpg" alt="pr-sample23" /></div>
   <figcaption>
     <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
@@ -333,101 +420,83 @@
 </figure>
 
 </div>
-            <div class="col-md-4 pb-3"><figure class="snip1527">
-  <div class="image"><img src="assets/img/art.jpg" alt="pr-sample23" /></div>
-  <figcaption>
-    <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
-    <h3>The World Ended Yesterday</h3>
-    <p>
-
-      You know what we need, Hobbes? We need an attitude. Yeah, you can't be cool if you don't have an attitude.
-    </p>
-  </figcaption>
-  <a href="#"></a>
-</figure>
-
-</div>
+            </div>
         </div>
-    </div>
-    <div>
-        <div class="container-fluid back-grey">
-            <div class="row text-center padding-64 font-padd">
-                <div class="col-md-4 contain-padd-40"><i class="fa fa-credit-card grey-icon"></i>
-                    <p class="font-weight-3"><br>Payment by Midtrans<br></p>
-                    <p class="pt-2">Easy shop and pay now at checkout<br></p>
-                </div>
-                <div class="col-md-4 contain-padd-40"><i class="fa fa-check-circle-o grey-icon"></i>
-                    <p class="font-weight-3"><br>Transaction &amp; Data secure<br></p>
-                    <p class="pt-2">Our web is secure and support payment 3rd party<br></p>
-                </div>
-                <div class="col-md-4 contain-padd-40"><i class="fa fa-whatsapp grey-icon"></i>
-                    <p class="font-weight-3"><br>Support hotline 24/7<br></p>
-                    <p class="pt-2">WA Official 087775019225<br></p>
+        <div>
+            <div class="container-fluid back-grey">
+                <div class="row text-center padding-64 font-padd">
+                    <div class="col-md-4 contain-padd-40"><i class="fa fa-credit-card grey-icon"></i>
+                        <p class="font-weight-3"><br>Payment by Midtrans<br></p>
+                        <p class="pt-2">Easy shop and pay now at checkout<br></p>
+                    </div>
+                    <div class="col-md-4 contain-padd-40"><i class="fa fa-check-circle-o grey-icon"></i>
+                        <p class="font-weight-3"><br>Transaction &amp; Data secure<br></p>
+                        <p class="pt-2">Our web is secure and support payment 3rd party<br></p>
+                    </div>
+                    <div class="col-md-4 contain-padd-40"><i class="fa fa-whatsapp grey-icon"></i>
+                        <p class="font-weight-3"><br>Support hotline 24/7<br></p>
+                        <p class="pt-2">WA Official 087775019225<br></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container d-lg-flex justify-content-lg-end bahasa mt-3 py-2">
-        <div>
-            <p class="p-2"><strong>Language :&nbsp;</strong></p>
+        <div class="container pt-3">
+            <div class="subs-text pb-3">
+                <h1 class="subs-header">SUBSCRIBE</h1><span class="subs-text">Subscribe to get the latest news &amp; updates.</span></div>
+            <div class="group"><input type="text" class="ginput-subs" required="" placeholder="Your email address">
+                <div class="subs-button"><a class="btn btn-type1-small" role="button" href="index.html">SUBMIT</a></div>
+            </div>
         </div>
-        <div class="d-flex btn-bahasa"><a class="p-2" href="#">English</a></div>
-        <div>
-            <p class="p-2"><strong>|</strong></p>
+        <hr>
+        <div class="container d-lg-flex justify-content-lg-end bahasa mt-3 py-2">
+            <div>
+                <p class="p-2"><strong>Language :&nbsp;</strong></p>
+            </div>
+            <div class="d-flex btn-bahasa"><a class="p-2" href="#">English</a></div>
+            <div>
+                <p class="p-2"><strong>|</strong></p>
+            </div>
+            <div class="btn-bahasa"><a class="d-flex p-2" href="#">Indonesia</a></div>
         </div>
-        <div class="btn-bahasa"><a class="d-flex p-2" href="#">Indonesia</a></div>
-    </div>
-    <hr>
-    <div class="footer-clean">
-        <footer>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3">
-                        <a href="help.html">
-                            <h3 class="text-center py-4">HELP</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3">
-                        <a href="#">
-                            <h3 class="text-center py-4">EXPLORE</h3>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3">
-                        <a href="policy.html">
-                            <h3 class="text-center py-4">POLICY</h3>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://www.youtube.com/channel/UCTBavLm_Z1zr_4bxVvRAl1g"><i class="icon ion-social-youtube"></i></a><a href="https://www.instagram.com/celcius_idn/"><i class="icon ion-social-instagram"></i></a>
-                        <p
-                            class="copyright">Celciusmen © 2021</p>
+        <hr>
+        <div class="footer-clean">
+            <footer>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 col-lg-2 text-center pt-4"><a href="help.html"><span><strong>HELP</strong></span></a></div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 text-center pt-4"><a href="#"><span><strong>HOW TO REFUND</strong></span></a></div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 text-center pt-4"><a href="policy.html"><span><strong>POLICY</strong></span></a></div>
+                        <div class="col-lg-5 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://www.youtube.com/channel/UCTBavLm_Z1zr_4bxVvRAl1g"><i class="icon ion-social-youtube"></i></a><a href="https://www.instagram.com/celcius_idn/"><i class="icon ion-social-instagram"></i></a>
+                            <p
+                                class="copyright">Celciusmen © 2021</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="assets/js/accordion.js"></script>
-    <script src="assets/js/back-to-top.js"></script>
-    <script src="assets/js/collapsible.js"></script>
-    <script src="assets/js/countdown-timer.js"></script>
-    <script src="assets/js/countdown.js"></script>
-    <script src="assets/js/dropdown-nav.js"></script>
-    <script src="assets/js/fixed-navbar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="https://www.stadget.com/cdn/widget-init.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/product-detail.js"></script>
-    <script src="assets/js/qty-incriment.js"></script>
-    <script src="assets/js/search-navbar.js"></script>
-    <script src="assets/js/share-link-note.js"></script>
-    <script src="assets/js/show-element.js"></script>
-    <script src="assets/js/side-cart.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
-    <script src="assets/js/Swipe-Slider-7.js"></script>
+            </footer>
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/bs-init.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+        <script src="assets/js/accordion.js"></script>
+        <script src="assets/js/back-to-top.js"></script>
+        <script src="assets/js/collapsible.js"></script>
+        <script src="assets/js/countdown-timer.js"></script>
+        <script src="assets/js/countdown.js"></script>
+        <script src="assets/js/dropdown-nav.js"></script>
+        <script src="assets/js/fixed-navbar.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+        <script src="https://www.stadget.com/cdn/widget-init.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/owl.carousel.js"></script>
+        <script src="assets/js/product-detail.js"></script>
+        <script src="assets/js/qty-incriment.js"></script>
+        <script src="assets/js/search-navbar.js"></script>
+        <script src="assets/js/share-link-note.js"></script>
+        <script src="assets/js/show-element.js"></script>
+        <script src="assets/js/side-cart.js"></script>
+        <script src="assets/js/Simple-Slider.js"></script>
+        <script src="assets/js/Swipe-Slider-7.js"></script>
 </body>
 
 </html>

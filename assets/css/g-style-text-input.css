@@ -12,6 +12,17 @@
   border-bottom: 1px solid #000000;
 }
 
+.ginput-subs {
+  font-size: 12px;
+  padding: 10px 10px 5px 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
 .ginput:focus {
   outline: none;
 }
